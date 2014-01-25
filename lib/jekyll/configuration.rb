@@ -28,7 +28,7 @@ module Jekyll
       'relative_permalinks' => true,     # backwards-compatibility with < 1.0
                                          # will be set to false once 2.0 hits
 
-      'markdown'      => 'maruku',
+      'markdown'      => 'kramdown',
       'highlighter'   => 'pygments',
       'permalink'     => 'date',
       'baseurl'       => '/',
