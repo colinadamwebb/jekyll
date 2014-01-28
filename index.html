@@ -1,90 +1,118 @@
----
-layout: default
-title: Jekyll &bull; Simple, blog-aware, static sites
-overview: true
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Jekyll by colinadamwebb</title>
+  </head>
 
-<section class="intro">
-  <div class="grid">
-    <div class="unit whole center-on-mobiles">
-      <p class="first">Transform your plain text into static&nbsp;websites and&nbsp;blogs.</p>
-    </div>
-  </div>
-</section>
-<section class="features">
-  <div class="grid">
-    <div class="unit one-third">
-      <h2>Simple</h2>
-      <p>
-        No more databases, comment moderation, or pesky updates to install—just <em>your content</em>.
-      </p>
-      <a href="/docs/usage/" class="">How Jekyll works &rarr;</a>
-    </div>
-    <div class="unit one-third">
-      <h2>Static</h2>
-      <p><a href="http://daringfireball.net/projects/markdown/">Markdown</a> (or <a href="http://textile.sitemonks.com/">Textile</a>), <a href="http://wiki.shopify.com/Liquid">Liquid</a>, HTML <span class="amp">&amp;</span> CSS go in. Static sites come out ready for deployment.</p>
-      <a href="/docs/templates/" class="">Jekyll template guide &rarr;</a>
-    </div>
-    <div class="unit one-third">
-      <h2>Blog-aware</h2>
-      <p>
-        Permalinks, categories, pages, posts, and custom layouts are all first-class citizens here.
-      </p>
-      <a href="/docs/migrations/" class="">Migrate your blog &rarr;</a>
-    </div>
-    <div class="clear"></div>
-  </div>
-</section>
-<section class="quickstart">
-  <div class="grid">
-    <div class="unit golden-small center-on-mobiles">
-      <h4>Get up and running <em>in&nbsp;seconds</em>.</h4>
-    </div>
-    <div class="unit golden-large code">
-      <p class="title">Quick-start Instructions</p>
-      <div class="shell">
-        <p class="line">
-          <span class="path">~</span>
-          <span class="prompt">$</span>
-          <span class="command">gem install jekyll</span>
-        </p>
-        <p class="line">
-          <span class="path">~</span>
-          <span class="prompt">$</span>
-          <span class="command">jekyll new my-awesome-site</span>
-        </p>
-        <p class="line">
-          <span class="path">~</span>
-          <span class="prompt">$</span>
-          <span class="command">cd my-awesome-site</span>
-        </p>
-        <p class="line">
-          <span class="path">~/my-awesome-site</span>
-          <span class="prompt">$</span>
-          <span class="command">jekyll serve</span>
-        </p>
-        <p class="line">
-          <span class="output"># => Now browse to http://localhost:4000</span>
-        </p>
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Jekyll</h1>
+          <h2>Jekyll is a blog-aware, static site generator in Ruby</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/colinadamwebb/jekyll/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/colinadamwebb/jekyll/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/colinadamwebb/jekyll" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a name="jekyll" class="anchor" href="#jekyll"><span class="octicon octicon-link"></span></a><a href="http://jekyllrb.com/">Jekyll</a>
+</h1>
+
+<p><a href="http://badge.fury.io/rb/jekyll"><img src="https://badge.fury.io/rb/jekyll.png" alt="Gem Version"></a></p>
+
+<p><a href="https://travis-ci.org/jekyll/jekyll"><img src="https://secure.travis-ci.org/jekyll/jekyll.png?branch=master" alt="Build Status"></a>
+<a href="https://codeclimate.com/github/jekyll/jekyll"><img src="https://codeclimate.com/github/jekyll/jekyll.png" alt="Code Climate"></a>
+<a href="https://gemnasium.com/jekyll/jekyll"><img src="https://gemnasium.com/jekyll/jekyll.png" alt="Dependency Status"></a>
+<a href="https://coveralls.io/r/jekyll/jekyll"><img src="https://coveralls.io/repos/jekyll/jekyll/badge.png" alt="Coverage Status"></a></p>
+
+<p>By Tom Preston-Werner, Nick Quaranto, and many <a href="https://github.com/jekyll/jekyll/graphs/contributors">awesome contributors</a>!</p>
+
+<p>Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind <a href="http://pages.github.com">GitHub Pages</a>, which you can use to host sites right from your GitHub repositories.</p>
+
+<h2>
+<a name="philosophy" class="anchor" href="#philosophy"><span class="octicon octicon-link"></span></a>Philosophy</h2>
+
+<p>Jekyll does what you tell it to do — no more, no less. It doesn't try to outsmart users by making bold assumptions, nor does it burden them with needless complexity and configuration. Put simply, Jekyll gets out of your way and allows you to concentrate on what truly matters: your content.</p>
+
+<h2>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting Started</h2>
+
+<ul>
+<li>
+<a href="http://jekyllrb.com/docs/installation/">Install</a> the gem</li>
+<li>Read up about its <a href="http://jekyllrb.com/docs/usage/">Usage</a> and <a href="http://jekyllrb.com/docs/configuration/">Configuration</a>
+</li>
+<li>Take a gander at some existing <a href="http://wiki.github.com/jekyll/jekyll/sites">Sites</a>
+</li>
+<li>Fork and <a href="http://jekyllrb.com/docs/contributing/">Contribute</a> your own modifications</li>
+<li>Have questions? Check out <code>#jekyll</code> on irc.freenode.net.</li>
+</ul><h2>
+<a name="diving-in" class="anchor" href="#diving-in"><span class="octicon octicon-link"></span></a>Diving In</h2>
+
+<ul>
+<li>
+<a href="http://jekyllrb.com/docs/migrations/">Migrate</a> from your previous system</li>
+<li>Learn how the <a href="http://jekyllrb.com/docs/frontmatter/">YAML Front Matter</a> works</li>
+<li>Put information on your site with <a href="http://jekyllrb.com/docs/variables/">Variables</a>
+</li>
+<li>Customize the <a href="http://jekyllrb.com/docs/permalinks/">Permalinks</a> your posts are generated with</li>
+<li>Use the built-in <a href="http://jekyllrb.com/docs/templates/">Liquid Extensions</a> to make your life easier</li>
+<li>Use custom <a href="http://jekyllrb.com/docs/plugins/">Plugins</a> to generate content specific to your site</li>
+</ul><h2>
+<a name="runtime-dependencies" class="anchor" href="#runtime-dependencies"><span class="octicon octicon-link"></span></a>Runtime Dependencies</h2>
+
+<ul>
+<li>Commander: Command-line interface constructor (Ruby)</li>
+<li>Colorator: Colorizes command line output (Ruby)</li>
+<li>Classifier: Generating related posts (Ruby)</li>
+<li>Directory Watcher: Auto-regeneration of sites (Ruby)</li>
+<li>Liquid: Templating system (Ruby)</li>
+<li>Maruku: Default markdown engine (Ruby)</li>
+<li>Pygments.rb: Syntax highlighting (Ruby/Python)</li>
+<li>RedCarpet: Markdown engine (Ruby)</li>
+<li>Safe YAML: YAML Parser built for security (Ruby)</li>
+</ul><h2>
+<a name="developer-dependencies" class="anchor" href="#developer-dependencies"><span class="octicon octicon-link"></span></a>Developer Dependencies</h2>
+
+<ul>
+<li>Kramdown: Markdown-superset converter (Ruby)</li>
+<li>Launchy: Cross-platform file launcher (Ruby)</li>
+<li>RDiscount: Discount Markdown Processor (Ruby)</li>
+<li>RedCloth: Textile support (Ruby)</li>
+<li>RedGreen: Nicer test output (Ruby)</li>
+<li>RR: Mocking (Ruby)</li>
+<li>Shoulda: Test framework (Ruby)</li>
+<li>SimpleCov: Coverage framework (Ruby)</li>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>See <a href="https://github.com/jekyll/jekyll/blob/master/LICENSE">LICENSE</a>.</p>
+        </section>
+
+        <footer>
+          Jekyll is maintained by <a href="https://github.com/colinadamwebb">colinadamwebb</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
       </div>
     </div>
-    <div class="clear"></div>
-  </div>
-</section>
-<section class="free-hosting">
-  <div class="grid">
-    <div class="unit whole">
-      <div class="grid pane">
-        <div class="unit whole center-on-mobiles">
-          <img src="img/octojekyll.png" alt="Free Jekyll hosting on GitHub Pages">
-          <div class="pane-content">
-            <h2 class="center-on-mobiles"><strong>Free hosting</strong> with GitHub Pages</h2>
-            <p>Sick of dealing with hosting companies? <a href="http://pages.github.com/">GitHub Pages</a> are <em>powered by Jekyll</em>, so you can easily deploy your site using GitHub for free&mdash;<a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">custom domain name</a> and&nbsp;all.</p>
-            <a href="http://pages.github.com/" class="">Learn more about GitHub Pages &rarr;</a>
-          </div>
-        </div>
-        <div class="clear"></div>
-      </div>
-    </div>
-  </div>
-</section>
+  </body>
+</html>
